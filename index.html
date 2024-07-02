@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Aziz</title>
+    <link  rel="icon" href="assets/imageAicon.png">
+
+     <!-- Template Main CSS File -->
+    <link rel="stylesheet" href="css/style.css"></link>
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/bootstrap-icons.css" >
+    <!-- Template JS file-->
+    <script src="js/script.js"></script>
+   <!-- <script src="js/main.js"></script> -->
+    
+</head>
+
+<body>
+    <!-- ini header -->
+    <header class="nav-container">
+        <div class="logo-icon"></div>
+        <nav>
+            <a class="nav-font" href="#index">Home</a>
+            <a class="nav-font" href="#our-profile">Our Profile</a>
+            <a class="nav-font" href="#portofolio">Portofolio</a>
+            <a class="nav-font" href="#mesage">Message Us</a>
+        </nav>
+    </header>
+  <hr>
+    <main>
+    <!-- ini home content -->
+     
+     <section class="section" id="index" >
+        <header >
+            <h1>Hi <span id="name">?</span>, Welcome To Website</h1>
+            <button id="tombol">Ganti Nama</button>
+        </header>
+        <article>
+            <p>ini adalah website portofolio saya</p>
+            <div class="banner-container" ></div>
+           
+        </article>
+     </section>
+
+     <hr/>
+     <!-- ini our profile -->
+
+      <section  class="section" id="our-profile">
+        <header>
+            <h1>Our Profile</h1>
+        </header>
+
+        <article class="profile-content">
+            <div class="profile-item"> 
+                <div class="profile-icon profile1"></div>
+                <p>Profile 1</p>
+            </div>
+            <div class="profile-item"> 
+                <div class="profile-icon profile2"></div>
+                <p>Profile 2</p>
+            </div>
+            <div class="profile-item"> 
+                <div class="profile-icon profile3"></div>
+                <p>Profile 3</p>
+            </div>
+            <div class="profile-item"> 
+                <div class=""></div>
+                <p></p>
+            </div>
+            <div class="profile-item"> 
+                <div class=""></div>
+                <p></p>
+            </div>
+        </article>
+
+      </section>
+      <!-- ini portofolio -->
+      <section class="section" id="portofolio">
+        <header>
+            <h1>portofolio</h1>
+         
+
+        </header>
+        <article>
+            <p>ini adalah website portofolio saya</p>
+            <div class="banner-container"></div>
+        </article>
+     </section>
+       <!-- ini mesage -->
+       <section class="section" id="mesage">
+        <header>
+            <h1>Message Us</h1>
+            
+        </header>
+        <article>
+            <div class="container-Message">
+                <div class="form-container">
+                    <form id="messageForm">
+                        <form id="messageForm">
+                            <label for="nama">Nama:</label>
+                            <input type="text" id="nama" name="nama">
+                            <label for="tanggalLahir">Tanggal Lahir:</label>
+                            <input type="date" id="tanggalLahir" name="tanggalLahir">
+                            <label for="jenisKelamin">Jenis Kelamin:</label>
+                            <div>
+                                <input type="radio" id="lakiLaki" name="jenisKelamin" value="Laki-Laki" checked>
+                                <label for="lakiLaki">Laki-Laki</label>
+                                <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan">
+                                <label for="perempuan">Perempuan</label>
+                            </div>
+                            <label for="pesan">Pesan:</label>
+                            <textarea id="pesan" name="pesan" rows="4" cols="50"></textarea>
+                            <button type="button" onclick="displayMessage()">Submit</button>
+                        </form>
+                    </form>
+                </div>
+                
+                <div class="result-container">
+                    <h2>Result</h2>
+                    <p>Current time: <span id="currentTime"></span></p>
+                    <p><strong>Nama:</strong> <span id="displayNama"></span></p>
+                    <p><strong>Tanggal Lahir:</strong> <span id="displayTanggalLahir"></span></p>
+                    <p><strong>Jenis Kelamin:</strong> <span id="displayJenisKelamin"></span></p>
+                    <p><strong>Pesan:</strong> <span id="displayPesan"></span></p>
+                </div>
+
+            </div>
+        </article>
+     </section>
+</body>
+</html>

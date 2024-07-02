@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+</head>
+<body>
+    <section>
+        <header>
+            <h1>Hi <span id="name">aziz</span>, Welcome To Website</h1>
+        </header>
+        <article>
+            <p>Ini adalah website portofolio saya</p>
+            <div class="banner-container"></div>
+            <button id="tombol">Ganti Nama</button>
+        </article>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function replaceName() {
+                let name = prompt("Halo, siapa nama Anda?", "");
+                if (name) {
+                    document.getElementById("name").innerText = name;
+                }
+            }
+
+            // Panggil replaceName saat halaman pertama kali dimuat
+            replaceName();
+
+            // Tambahkan event listener ke tombol
+            document.getElementById("tombol").addEventListener("click", replaceName);
+        });
+    </script>
+</body>
+</html>
